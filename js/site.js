@@ -43,9 +43,80 @@ function scrollActive() {
   }
 }
 
+// window scroll event
 window.addEventListener("scroll", scrollActive);
 
 // copyright year
 document.querySelector(
   ".copy_right"
 ).innerHTML = `${new Date().getFullYear()} ${"&copy;"} Darshana Wijesinghe`;
+
+// image model popup
+const ImageShow = {
+  show(src, alt) {
+    try {
+      const html = `<div class="img_model" id="img-model">
+                      <div class="img_window">
+                          <div class="img_body">
+                              <img src="${src}" id="img-holder" height="439" width="800" alt="${alt}">
+                          </div>
+                      </div>
+                    </div>`;
+      const template = document.createElement("template");
+      template.innerHTML = html;
+
+      // events
+      const backDrop = template.content.getElementById("img-model");
+
+      backDrop.addEventListener("click", (e) => {
+        if (e.target === backDrop) {
+          this.hide(backDrop);
+        }
+      });
+
+      document.body.appendChild(template.content);
+    } catch (error) {
+      console.log(error);
+    }
+  },
+  // hide image model
+  hide(element) {
+    try {
+      document.body.removeChild(element);
+    } catch (error) {
+      console.log(error);
+    }
+  },
+};
+
+// images
+const webApp = document.getElementById("assigna-web");
+const webApi = document.getElementById("assigna-api");
+const eStore = document.getElementById("e-store");
+
+// assigna web app
+webApp.onclick = function () {
+  try {
+    ImageShow.show(this.src, this.alt);
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+// assigna web api
+webApi.onclick = function () {
+  try {
+    ImageShow.show(this.src, this.alt);
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+// e store
+eStore.onclick = function () {
+  try {
+    ImageShow.show(this.src, this.alt);
+  } catch (error) {
+    console.log(error);
+  }
+};
