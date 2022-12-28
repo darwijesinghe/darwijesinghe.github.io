@@ -387,7 +387,7 @@ button {
 
 /*active link*/
 .active {
-color: var(--pastel-grey);
+  color: var(--pastel-grey);
 }
 
 /*#endregion*/
@@ -548,6 +548,10 @@ color: var(--pastel-grey);
 
 .javascript .sk_img {
   background-color: #f0db4f;
+}
+
+.react .sk_img {
+  background-color: #61dafb;
 }
 
 .windows .sk_img {
@@ -783,7 +787,7 @@ color: var(--pastel-grey);
 
   .skill_content .grid {
     grid-template-rows: none;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: var(--m-3);
   }
 
