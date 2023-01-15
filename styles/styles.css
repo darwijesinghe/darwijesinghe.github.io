@@ -626,6 +626,7 @@ button {
   display: inline-block;
   line-height: 1;
 }
+
 .proj_links a {
   display: inline-block;
   font-size: 0;
@@ -817,11 +818,13 @@ button {
     opacity: 0.7;
   }
 
-  .assigna_web {
+  .assigna_web,
+  .assigna_con {
     grid-template-columns: 0.8fr 1fr;
   }
 
-  .assigna_web .proj_details {
+  .assigna_web .proj_details,
+  .assigna_con .proj_details {
     margin-left: var(--m-4);
   }
 
@@ -834,11 +837,11 @@ button {
   }
 
   .e_store {
-    grid-template-columns: 0.8fr 1fr;
+    grid-template-columns: 1fr 0.8fr;
   }
 
   .e_store .proj_details {
-    margin-left: var(--m-4);
+    margin-right: var(--m-4);
   }
 
   .cont_content .grid {

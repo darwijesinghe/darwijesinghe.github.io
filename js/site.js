@@ -92,6 +92,7 @@ const ImageShow = {
 // images
 const webApp = document.getElementById("assigna-web");
 const webApi = document.getElementById("assigna-api");
+const conApp = document.getElementById("assigna-con");
 const eStore = document.getElementById("e-store");
 
 // assigna web app
@@ -105,6 +106,15 @@ webApp.onclick = function () {
 
 // assigna web api
 webApi.onclick = function () {
+  try {
+    ImageShow.show(this.src, this.alt);
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+// assigna console app
+conApp.onclick = function () {
   try {
     ImageShow.show(this.src, this.alt);
   } catch (error) {
