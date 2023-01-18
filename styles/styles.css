@@ -1,6 +1,6 @@
 /*#region base setup */
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 
 /*#region variables */
 :root {
@@ -17,7 +17,7 @@
   --max-width: 1025px;
 
   /* fonts */
-  --body-font: "Montserrat", sans-serif;
+  --body-font: "Roboto", sans-serif;
   --big-font-size: 30px;
   --h1-font-size: 24px;
   --h2-font-size: 20px;
@@ -29,7 +29,7 @@
   /* font weights */
   --normal-weight: 400;
   --medium-weight: 500;
-  --semi-bold: 600;
+  --semi-bold: 700;
 
   /* colors */
   --white: #ffffff;
@@ -497,17 +497,32 @@ button {
 /*#region skillset*/
 
 .skill_content .grid {
-  grid-template-rows: repeat(8, auto);
+  grid-template-rows: repeat(3, auto);
+  gap: var(--m-3);
 }
 
-.skill_card {
-  padding: var(--p-3);
+.skill_level {
+  padding: var(--p-2);
   border: 1px solid var(--platinum);
   border-radius: var(--b-radius);
 }
 
-.skill_card:not(:last-of-type) {
-  margin: 0 0 var(--m-3);
+.sk_level {
+  font-size: var(--normal-font-size);
+  color: var(--black);
+  font-weight: var(--semi-bold);
+  margin-bottom: var(--m-3);
+}
+
+.skill_list li {
+  display: flex;
+  align-items: center;
+  font-size: var(--normal-font-size);
+  color: var(--black);
+}
+
+.skill_list li:not(:last-child) {
+  margin-bottom: var(--m-2);
 }
 
 .sk_img {
@@ -515,27 +530,30 @@ button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 57px;
-  height: 57px;
-  padding: var(--p-1);
+  width: 35px;
+  height: 35px;
+  padding: 5px;
   border-radius: var(--b-radius);
-  margin: 0 0 var(--m-2);
+  margin-right: var(--m-2);
+}
+
+.sk_img svg {
+  fill: var(--white);
+  width: 20px;
+  height: 20px;
+}
+
+.dot_net .sk_img,
+.asp_dot_net .sk_img {
+  background-color: #1384c8;
 }
 
 .c_sharp .sk_img {
   background-color: #68217a;
 }
 
-.dot_net .sk_img {
-  background-color: #1384c8;
-}
-
 .sql_server .sk_img {
   background-color: #d92e29;
-}
-
-.azure .sk_img {
-  background-color: #0072c6;
 }
 
 .html .sk_img {
@@ -554,31 +572,13 @@ button {
   background-color: #00d8ff;
 }
 
-.windows .sk_img {
-  background-color: #00adef;
-}
-
-.sk_img svg {
-  fill: var(--white);
-  width: 40px;
-  height: 40px;
-}
-
-.azure svg {
-  width: 30px;
-  height: 30px;
-}
-
-.sk_title {
+/* .skill_list li::before {
+  content: "•";
   font-size: var(--normal-font-size);
-  font-weight: var(--medium-weight);
-  color: var(--black);
-  margin: 0 0 var(--m-1);
-}
-
-.sk_discript {
-  font-size: var(--small-font-size);
-}
+  left: 0;
+  position: absolute;
+  top: 1px;
+} */
 
 /*#endregion*/
 
@@ -789,15 +789,10 @@ button {
   .skill_content .grid {
     grid-template-rows: none;
     grid-template-columns: repeat(3, 1fr);
-    gap: var(--m-3);
   }
 
-  .skill_card {
+  .skill_level {
     height: 100%;
-  }
-
-  .skill_card:not(:last-of-type) {
-    margin: 0;
   }
 
   .proj_card {
