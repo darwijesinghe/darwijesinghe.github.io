@@ -497,17 +497,17 @@ button {
 /*#region skillset*/
 
 .skill_content .grid {
-  grid-template-rows: repeat(3, auto);
+  grid-template-rows: repeat(4, auto);
   gap: var(--m-3);
 }
 
-.skill_level {
+.skill_have {
   padding: var(--p-2);
   border: 1px solid var(--platinum);
   border-radius: var(--b-radius);
 }
 
-.sk_level {
+.skill_type {
   font-size: var(--normal-font-size);
   color: var(--black);
   font-weight: var(--semi-bold);
@@ -525,7 +525,7 @@ button {
   margin-bottom: var(--m-2);
 }
 
-.sk_img {
+.skill_img {
   line-height: 1;
   display: inline-flex;
   align-items: center;
@@ -537,39 +537,46 @@ button {
   margin-right: var(--m-2);
 }
 
-.sk_img svg {
+.skill_img svg {
   fill: var(--white);
   width: 20px;
   height: 20px;
 }
 
-.dot_net .sk_img,
-.asp_dot_net .sk_img {
+.dot_net .skill_img{
   background-color: #1384c8;
 }
 
-.c_sharp .sk_img {
+.c_sharp .skill_img {
   background-color: #68217a;
 }
 
-.sql_server .sk_img {
+.sql_server .skill_img {
   background-color: #d92e29;
 }
 
-.html .sk_img {
-  background-color: #e34f26;
+.sql_lite .skill_img{
+    background-color: #0F80CC;
 }
 
-.css .sk_img {
-  background-color: #1b73ba;
+.mongo_db .skill_img{
+    background-color: #4FAA41;
 }
 
-.javascript .sk_img {
+.javascript .skill_img {
   background-color: #f0db4f;
 }
 
-.react .sk_img {
-  background-color: #00d8ff;
+.apis .skill_img {
+  background-color: #049688;
+}
+
+.git .skill_img {
+  background-color: #F34F29;
+}
+
+.azure .skill_img {
+  background-color: #0089D6;
 }
 
 /* .skill_list li::before {
@@ -788,10 +795,10 @@ button {
 
   .skill_content .grid {
     grid-template-rows: none;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 
-  .skill_level {
+  .skill_have {
     height: 100%;
   }
 
