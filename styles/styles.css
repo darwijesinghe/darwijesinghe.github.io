@@ -539,8 +539,8 @@ button {
 
 .skill_img svg {
   fill: var(--white);
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
 }
 
 .dot_net .skill_img{
@@ -555,8 +555,8 @@ button {
   background-color: #d92e29;
 }
 
-.sql_lite .skill_img{
-    background-color: #0F80CC;
+.my_sql .skill_img{
+    background-color: #3e6e93;
 }
 
 .mongo_db .skill_img{
