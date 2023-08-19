@@ -539,8 +539,8 @@ button {
 
 .skill_img svg {
   fill: var(--white);
-  width: 22px;
-  height: 22px;
+  width: 20px;
+  height: 20px;
 }
 
 .dot_net .skill_img{
