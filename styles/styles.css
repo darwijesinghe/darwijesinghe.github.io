@@ -821,12 +821,14 @@ button {
   }
 
   .assigna_web,
-  .assigna_con {
+  .assigna_con,
+  .assigment{
     grid-template-columns: 0.8fr 1fr;
   }
 
   .assigna_web .proj_details,
-  .assigna_con .proj_details {
+  .assigna_con .proj_details,
+  .assigment .proj_details{
     margin-left: var(--m-4);
   }
 
