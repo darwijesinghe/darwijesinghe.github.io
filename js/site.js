@@ -94,7 +94,6 @@ const webApp = document.getElementById("assigna-web");
 const webApi = document.getElementById("assigna-api");
 const conApp = document.getElementById("assigna-con");
 const eStore = document.getElementById("e-store");
-const assess = document.getElementById("assess");
 
 // assigna web app
 webApp.onclick = function () {
@@ -125,15 +124,6 @@ conApp.onclick = function () {
 
 // e store
 eStore.onclick = function () {
-  try {
-    ImageShow.show(this.src, this.alt);
-  } catch (error) {
-    console.log(error);
-  }
-};
-
-// assessment
-assess.onclick = function () {
   try {
     ImageShow.show(this.src, this.alt);
   } catch (error) {
