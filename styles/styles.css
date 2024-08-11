@@ -496,96 +496,30 @@ button {
 
 /*#region skillset*/
 
-.skill_content .grid {
-  grid-template-rows: repeat(4, auto);
-  gap: var(--m-3);
+.skill_content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
 }
 
-.skill_have {
-  padding: var(--p-2);
-  border: 1px solid var(--platinum);
-  border-radius: var(--b-radius);
+.skill_content table th, td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
 }
 
-.skill_type {
-  font-size: var(--normal-font-size);
-  color: var(--black);
-  font-weight: var(--semi-bold);
-  margin-bottom: var(--m-3);
+.skill_content table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
 }
 
-.skill_list li {
-  display: flex;
-  align-items: center;
-  font-size: var(--normal-font-size);
-  color: var(--black);
+.skill_content table td {
+  background-color: #fff;
 }
 
-.skill_list li:not(:last-child) {
-  margin-bottom: var(--m-2);
+.skill_content table th:first-child {
+  width: 30%;
 }
-
-.skill_img {
-  line-height: 1;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 35px;
-  height: 35px;
-  padding: 5px;
-  border-radius: var(--b-radius);
-  margin-right: var(--m-2);
-}
-
-.skill_img svg {
-  fill: var(--white);
-  width: 20px;
-  height: 20px;
-}
-
-.dot_net .skill_img{
-  background-color: #1384c8;
-}
-
-.c_sharp .skill_img {
-  background-color: #68217a;
-}
-
-.sql_server .skill_img {
-  background-color: #d92e29;
-}
-
-.my_sql .skill_img{
-    background-color: #3e6e93;
-}
-
-.mongo_db .skill_img{
-    background-color: #4FAA41;
-}
-
-.javascript .skill_img {
-  background-color: #f0db4f;
-}
-
-.apis .skill_img {
-  background-color: #049688;
-}
-
-.git .skill_img {
-  background-color: #F34F29;
-}
-
-.azure .skill_img {
-  background-color: #0089D6;
-}
-
-/* .skill_list li::before {
-  content: "•";
-  font-size: var(--normal-font-size);
-  left: 0;
-  position: absolute;
-  top: 1px;
-} */
 
 /*#endregion*/
 
@@ -793,19 +727,14 @@ button {
     margin-left: var(--m-3);
   }
 
-  .skill_content .grid {
-    grid-template-rows: none;
-    grid-template-columns: repeat(4, 1fr);
-  }
-
-  .skill_have {
-    height: 100%;
-  }
-
   .proj_card {
     display: grid;
     grid-template-rows: none;
     align-items: center;
+  }
+
+  .skill_content table th:first-child {
+    width: 20%;
   }
 
   .proj_image {
