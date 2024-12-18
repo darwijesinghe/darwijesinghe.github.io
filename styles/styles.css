@@ -499,27 +499,38 @@ button {
 .skill_content table {
   width: 100%;
   border-collapse: collapse;
-  margin: 20px 0;
 }
 
 .skill_content table th, td {
   padding: 12px;
   text-align: left;
-  border: 1px solid #ddd;
 }
 
 .skill_content table th {
-  background-color: #f4f4f4;
-  font-weight: bold;
+  /*background-color: #f4f4f4;*/
+  font-weight: var(--medium-weight);
 }
 
-.skill_content table td {
-  background-color: #fff;
+.skill_content table tr:first-child {
+  border-bottom: 1px solid #ddd;
+}
+
+.skill_content table td:not(:last-child){
+  border-right: 1px solid #ddd;
+}
+
+.skill_content table td:first-child{
+  font-weight: var(--medium-weight);
 }
 
 .skill_content table th:first-child {
   width: 30%;
 }
+
+table tr:nth-child(even):not(:first-child) {
+  background-color: #f4f4f4;
+}
+
 
 /*#endregion*/
 
