@@ -499,24 +499,17 @@ button {
 .skill_content table {
   width: 100%;
   border-collapse: collapse;
+  border: 1px solid #ddd;
 }
 
 .skill_content table th, td {
   padding: 12px;
   text-align: left;
+  border: 1px solid #ddd;  
 }
 
 .skill_content table th {
-  /*background-color: #f4f4f4;*/
   font-weight: var(--medium-weight);
-}
-
-.skill_content table tr:first-child {
-  border-bottom: 1px solid #ddd;
-}
-
-.skill_content table td:not(:last-child){
-  border-right: 1px solid #ddd;
 }
 
 .skill_content table td:first-child{
