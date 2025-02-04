@@ -494,29 +494,29 @@ button {
 
 /*#endregion*/
 
-/*#region skillset*/
+/*#region techstack*/
 
-.skill_content table {
+.tech_content table {
   width: 100%;
   border-collapse: collapse;
   border: 1px solid #ddd;
 }
 
-.skill_content table th, td {
+.tech_content table th, td {
   padding: 12px;
   text-align: left;
   border: 1px solid #ddd;  
 }
 
-.skill_content table th {
+.tech_content table th {
   font-weight: var(--medium-weight);
 }
 
-.skill_content table td:first-child{
+.tech_content table td:first-child{
   font-weight: var(--medium-weight);
 }
 
-.skill_content table th:first-child {
+.tech_content table th:first-child {
   width: 30%;
 }
 
@@ -737,7 +737,7 @@ table tr:nth-child(even):not(:first-child) {
     align-items: center;
   }
 
-  .skill_content table th:first-child {
+  .tech_content table th:first-child {
     width: 20%;
   }
 
