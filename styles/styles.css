@@ -527,57 +527,57 @@ table tr:nth-child(even):not(:first-child) {
 
 /*#endregion*/
 
-/*#region projects*/
-.projects {
+/*#region repository*/
+.repository {
   background-color: var(--alabaster);
 }
 
-.proj_content .grid {
+.repo_content .grid {
   grid-template-rows: repeat(3, auto);
 }
 
-.proj_card {
+.repo_card {
   display: grid;
   grid-template-rows: repeat(2, auto);
 }
 
-.proj_card:not(:last-of-type) {
+.repo_card:not(:last-of-type) {
   margin: 0 0 var(--m-5);
 }
 
-.proj_image {
+.repo_image {
   display: none;
 }
 
-.proj_title {
+.repo_title {
   font-size: var(--h3-font-size);
   color: var(--black);
   margin: 0 0 var(--m-0-1);
 }
 
-.proj_tagline {
+.repo_tagline {
   font-size: var(--normal-font-size);
   font-weight: var(--medium-weight);
   color: var(--true-blue);
   margin: 0 0 var(--m-2);
 }
 
-.proj_discript {
+.repo_discript {
   font-size: var(--normal-font-size);
   margin: 0 0 var(--m-2);
 }
 
-.proj_links {
+.repo_links {
   display: inline-block;
   line-height: 1;
 }
 
-.proj_links a {
+.repo_links a {
   display: inline-block;
   font-size: 0;
 }
 
-.proj_links a:not(:last-of-type) {
+.repo_links a:not(:last-of-type) {
   margin-right: var(--m-1);
 }
 
@@ -731,7 +731,7 @@ table tr:nth-child(even):not(:first-child) {
     margin-left: var(--m-3);
   }
 
-  .proj_card {
+  .repo_card {
     display: grid;
     grid-template-rows: none;
     align-items: center;
@@ -741,7 +741,7 @@ table tr:nth-child(even):not(:first-child) {
     width: 20%;
   }
 
-  .proj_image {
+  .repo_image {
     display: block;
     border: 1px solid var(--platinum);
     box-shadow: 0 0 8px var(--shadow);
@@ -749,7 +749,7 @@ table tr:nth-child(even):not(:first-child) {
     cursor: pointer;
   }
 
-  .proj_image:hover {
+  .repo_image:hover {
     opacity: 0.7;
   }
 
@@ -759,9 +759,9 @@ table tr:nth-child(even):not(:first-child) {
     grid-template-columns: 0.8fr 1fr;
   }
 
-  .assigna_web .proj_details,
-  .assigna_con .proj_details,
-  .assigment .proj_details{
+  .assigna_web .repo_details,
+  .assigna_con .repo_details,
+  .assigment .repo_details{
     margin-left: var(--m-4);
   }
 
@@ -769,7 +769,7 @@ table tr:nth-child(even):not(:first-child) {
     grid-template-columns: 1fr 0.8fr;
   }
 
-  .assigna_api .proj_details {
+  .assigna_api .repo_details {
     margin-right: var(--m-4);
   }
 
@@ -777,7 +777,7 @@ table tr:nth-child(even):not(:first-child) {
     grid-template-columns: 1fr 0.8fr;
   }
 
-  .e_store .proj_details {
+  .e_store .repo_details {
     margin-right: var(--m-4);
   }
 
