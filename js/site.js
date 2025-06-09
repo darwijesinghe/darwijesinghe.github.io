@@ -89,14 +89,14 @@ const ImageShow = {
   },
 };
 
-// images
-const webApp = document.getElementById("assigna-web");
-const webApi = document.getElementById("assigna-api");
-const conApp = document.getElementById("assigna-con");
-const eStore = document.getElementById("e-store");
+// image containers
+const leftCard1 = document.getElementById("left-card-1");
+const leftCard2 = document.getElementById("left-card-2");
+const rightCard1 = document.getElementById("right-card-1");
+const rightCard2 = document.getElementById("right-card-2");
 
-// assigna web app
-webApp.onclick = function () {
+// calling image popup function
+leftCard1.onclick = function () {
   try {
     ImageShow.show(this.src, this.alt);
   } catch (error) {
@@ -104,8 +104,7 @@ webApp.onclick = function () {
   }
 };
 
-// assigna web api
-webApi.onclick = function () {
+leftCard2.onclick = function () {
   try {
     ImageShow.show(this.src, this.alt);
   } catch (error) {
@@ -113,8 +112,7 @@ webApi.onclick = function () {
   }
 };
 
-// assigna console app
-conApp.onclick = function () {
+rightCard1.onclick = function () {
   try {
     ImageShow.show(this.src, this.alt);
   } catch (error) {
@@ -122,8 +120,7 @@ conApp.onclick = function () {
   }
 };
 
-// e store
-eStore.onclick = function () {
+rightCard2.onclick = function () {
   try {
     ImageShow.show(this.src, this.alt);
   } catch (error) {

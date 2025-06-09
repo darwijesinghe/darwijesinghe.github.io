@@ -753,31 +753,19 @@ table tr:nth-child(even):not(:first-child) {
     opacity: 0.7;
   }
 
-  .assigna_web,
-  .assigna_con,
-  .assigment{
-    grid-template-columns: 0.8fr 1fr;
+  .left_card{
+    grid-template-columns: 0.9fr 1fr;
   }
 
-  .assigna_web .repo_details,
-  .assigna_con .repo_details,
-  .assigment .repo_details{
+  .right_card {
+    grid-template-columns: 1fr 0.9fr;
+  }
+
+  .left_card .repo_details{
     margin-left: var(--m-4);
   }
 
-  .assigna_api {
-    grid-template-columns: 1fr 0.8fr;
-  }
-
-  .assigna_api .repo_details {
-    margin-right: var(--m-4);
-  }
-
-  .e_store {
-    grid-template-columns: 1fr 0.8fr;
-  }
-
-  .e_store .repo_details {
+  .right_card .repo_details {
     margin-right: var(--m-4);
   }
 
