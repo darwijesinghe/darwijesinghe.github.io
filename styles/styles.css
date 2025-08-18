@@ -494,7 +494,7 @@ button {
 
 /*#endregion*/
 
-/*#region techstack*/
+/*#region tech-stack*/
 
 .tech_content table {
   width: 100%;
@@ -581,27 +581,28 @@ button {
   margin-right: var(--m-1);
 } */
 
-.github-button {
+.github_button {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 10px 14px;
-  background-color: var(--black);
-  color: var(--white);
+  padding: 8px 9px;
+  background-color: var(--soft-peach);
+  color: var(--black);
   text-decoration: none;
   font-weight: 500;
   border-radius: var(--b-radius);
-  font-size: var(--small-font-size);
-  font-weight: var(--normal-weight);
+  font-size: var(--x-small-font-size);
+  font-weight: var(--medium-weight);
+  transition: 0.2s;
 }
 
-.github-button:hover {
-  background-color: var(--onyx);
+.github_button:hover {
+  background-color: #e9e9e9;
 }
 
-.github-button svg {
+.github_button svg {
   flex-shrink: 0;
-  fill: var(--white);
+  fill: var(--black);
 }
 
 /*#endregion*/
